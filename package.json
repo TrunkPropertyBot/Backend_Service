@@ -1,0 +1,24 @@
+{
+  "name": "backend_service",
+  "version": "1.0.0",
+  "description": "An Express Web server which acts as the backend service for trunk bot",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TrunkPropertyBot/Backend_Service.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TrunkPropertyBot/Backend_Service/issues"
+  },
+  "homepage": "https://github.com/TrunkPropertyBot/Backend_Service#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "request": "^2.85.0"
+  }
+}
