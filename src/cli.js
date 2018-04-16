@@ -14,7 +14,7 @@ stdin.addListener("data", function(d) {
         console.log("Say something to Watson: ");
       }
       if (!error && response.statusCode == 200) {
-        console.log(body);
+        console.log(body.output.text);
         console.log("Say something to Watson: ");
       }
     });
