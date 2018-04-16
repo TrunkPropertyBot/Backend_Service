@@ -1,4 +1,4 @@
-const AssistantV1 = require('watson-developer-cloud/assistant/v1');
+const Assistant = require('./assistant.js');
 
 class Watson {
 
@@ -16,13 +16,7 @@ class Watson {
       password = process.env.WATSON_WORKSPACE_PASSWORD;
     }
 
-    this.assistant = new AssistantV1({
-      username: username,
-      password: password,
-      url: 'https://gateway.watsonplatform.net/assistant/api/',
-      version: '2018-02-16'
-    });
-
+    this.assistant = new Assistant(username, password, "cf568e51-8d3a-43a1-9cba-c460c86362f2");
   }
 }
 

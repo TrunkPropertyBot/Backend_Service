@@ -1,5 +1,5 @@
 const express = require('express')
-const Watson = require('./watson.js');
+const Watson = require('./watson/index.js');
 
 let app = express()
 
