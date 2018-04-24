@@ -20,7 +20,7 @@ class Assistant {
         throw new Error(err);
       } else {
         console.log(JSON.stringify(response, null, 2));
-        callback(response.output.text[0]);
+        callback(response);
       }
     });
   }
