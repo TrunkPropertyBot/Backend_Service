@@ -1,5 +1,6 @@
 const express = require('express')
 const Watson = require('./watson/index.js');
+const serverless = require('serverless-http');
 
 let app = express()
 
@@ -18,8 +19,4 @@ require('./config/express')(app);
 // Bootstrap the application routes
 require('./routes/watson')(app, watson);
 
-let server = app.listen(8080, () => {
-   let port = server.address().port
-
-   console.log("Server is listening at http://localhost:%s", port)
-});
+module.exports.handler = serverless(app);
